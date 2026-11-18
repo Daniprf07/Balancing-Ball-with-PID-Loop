@@ -1,5 +1,8 @@
 # Balancing-Ball-with-PID-Loop
 Using a PID loop to balance a ball on a beam by adjusting the angle of a servomotor.
+
 How difficult can it be to keep a single ball balanced? What appears to be a simple challenge quickly becomes a task involving not only physics, but programming and mechanical design as well. This project explores the development of a proportional-integral-derivative (PID) controller designed to maintain a ball at a desired position on a tilting beam. 
+
 Using a time-of-flight sensor, a servomotor, and Circuit Python programming, the system continuously measures the balls position and oscillates and adjusts the beams angle in response to the change. The controller uses three adjustable gains to correct position errors, reduce oscillations, and improve stability. Through repeated testing, our group has investigated how changes in these gains and the physical setup influence the balls movement. Adjustments such as modifying the connections and developing 3D-printed components are being explored to improve consistency.
+
 Although final tuning and performance measurements are still in progress, this project demonstrates an important principle of feedback control. Maintaining stability requires more than just correcting the error, but understanding how every correction affects the systems next movement
