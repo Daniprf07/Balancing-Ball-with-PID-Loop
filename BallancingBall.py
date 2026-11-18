@@ -99,7 +99,7 @@ while True:
     
     decay = 0.90   # Decaying factor to smooth integral term
      
-    integral = integral  +  (error * LOOP_TIME)
+    integral = (integral*decay)  +  (error * LOOP_TIME)
     
     i_term = -ki * integral
     
@@ -145,5 +145,5 @@ while True:
     
     elapsed = time.monotonic() - loop_start    
         
-    if elapsed < LOOP_TIME  :
+    if elapsed < LOOP_TIME s:
         time.sleep(LOOP_TIME - elapsed)
